@@ -1,1 +1,9 @@
-events#index page
+<h1>Events</h1>
+<%= @events.each do |event| %>
+
+<%= render 'event', event: event %>
+
+<% end %>
+<br>
+<br>
+<%= link_to 'New Event', new_event_path %>
