@@ -1,4 +1,5 @@
 <%= form_for @job_application do |job_form| %>
+
 <%= job_form.label :full_name %>
 <%= job_form.text_field :full_name %>
 <%= job_form.label :phone %>
@@ -7,6 +8,7 @@
 <%= job_form.text_field :hobby %>
 <%= job_form.label :years_experience %>
 <%= job_form.number_field :years_experience %>
+
 <%= job_form.submit %>
 <% end %>
 

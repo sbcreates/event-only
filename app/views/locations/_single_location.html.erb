@@ -1,0 +1,9 @@
+<div class="location">
+  <h3><%= location.name %></h3>
+  <h4>City: <%= location.city %></h4>
+  <%= location.description %>
+  <br>
+  <%= link_to image_tag(location.image, class: "location"), location_path(location) %>
+</div>
+
+<!-- in our partial, location is a local variable, not an instance variable. This is because the partial's job is to render whatever we give it, and we won't always have an instance variable called @location. We could have called it anything. -->
