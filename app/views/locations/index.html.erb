@@ -4,3 +4,5 @@
 <!-- using partial view file '_single_location.html.erb'. first argument is the name of the partial view file leaving out the beginning '_'. -->
   <%= render 'single_location', location: current_location %>
 <% end %>
+
+<p><%= link_to 'New Location', new_location_path %></p>
