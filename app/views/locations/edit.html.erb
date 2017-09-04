@@ -1,1 +1,5 @@
-locations#edit page
+</h1> Edit <%= @location.name %></h1>
+
+<%= render 'location_form', location: @location %>
+
+<%= link_to 'Show All Locations', locations_path %>
